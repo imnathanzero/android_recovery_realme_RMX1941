@@ -49,8 +49,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_DATA_RECOVERY_FOR_SETTINGS=1
         export OF_ENABLE_LAB=1
         export OF_HIDE_NOTCH=1
-	export OF_STATUS_INDENT_LEFT=10
-        export OF_STATUS_INDENT_RIGHT=9
+	export OF_STATUS_INDENT_LEFT=50
+        export OF_STATUS_INDENT_RIGHT=50
 	export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 	export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 	export OF_FL_PATH1="/sys/class/leds/flashlight"
@@ -71,8 +71,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export TW_DEFAULT_LANGUAGE="en"
 	export OF_SCREEN_H=2340
 	export OF_STATUS_H=76
-	export OF_STATUS_INDENT_LEFT=48
-	export OF_STATUS_INDENT_RIGHT=48
+	export FOX_DRASTIC_SIZE_REDUCTION=1
 	
 # let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
