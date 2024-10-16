@@ -71,6 +71,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export TW_DEFAULT_LANGUAGE="en"
 	export OF_SCREEN_H=2340
 	export OF_STATUS_H=76
+ export OF_USE_LZMA_COMPRESSION=1
 	export FOX_DRASTIC_SIZE_REDUCTION=1
 	
 # let's see what are our build VARs
